@@ -1,0 +1,37 @@
+{
+   "manifest_version":2,
+   "icons":{
+      "128":"icons/ic_128.png",
+      "48":"icons/ic_48.png",
+      "16":"icons/ic_16.png"
+   },
+   "name":"AryKey",
+   "short_name": "arykey",
+   "description":"This extension loads the 'hardware key' with the user inputs, and the KDF will derive a password for it.",
+   "version":"2022.2.28.1",
+   "author":"Ryan Amaral",
+   "homepage_url":"https://github.com/ryanamaral/arykey-chrome-extension",
+   "permissions":[
+      "tabs",
+      "activeTab",
+      "storage"
+   ],
+   "browser_action":{
+      "default_popup":"popup.html"
+   },
+   "options_page": "arykey.html",
+   "content_scripts":[
+      {
+         "matches":[
+            "http://*/*",
+            "https://*/*"
+         ],
+         "all_frames":true,
+         "js":[
+            "js/lottie.5.8.1.min.js",
+            "js/passwordVisibility.js"
+         ],
+         "run_at": "document_start"
+      }
+   ]
+}
