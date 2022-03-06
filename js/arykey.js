@@ -166,7 +166,8 @@ async function sendSerialLine() {
                         var sha512 = hex_sha512(data);
                         //alert(sha512);
 
-                        var dataToSend = sha512 += "\n";
+                        var dataToSend = "/" + sha512 + "\n";
+                        //alert(dataToSend);
                         writer.write(dataToSend);
 
                     } catch (errorMsg) {
