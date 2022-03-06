@@ -1,6 +1,22 @@
-<img src="https://github.com/ryanamaral/arykey-chrome-extension/raw/dev/screenshots/popup.png" width="260">
+# <img src="https://raw.githubusercontent.com/ryanamaral/arykey-firmware/dev/assets/icon.png" width="45" align="left"> AryKey Chrome Extension
+<br />
 
-# AryKey - Google Chrome Extension \[ 🚧🧑‍🏭 WIP 🔧🚧 \]
+[link-android]: https://github.com/ryanamaral/arykey-android 'Version published on Github'
+[link-chrome]: https://github.com/ryanamaral/arykey-chrome-extension 'Version published on Github'
+[link-firmware]: https://github.com/ryanamaral/arykey-firmware 'Version published on Github'
+
+[<img src="https://raw.githubusercontent.com/ryanamaral/arykey-firmware/dev/assets/android.png" width="34" alt="Android" valign="middle">][link-android] <b>Android App</b> [<img valign="middle" src="https://img.shields.io/badge/v2022.02.21.1-dev-blue">][link-android]
+
+[<img src="https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/chrome/chrome.svg" width="34" alt="Chrome" valign="middle">][link-chrome]  <b>Chrome Extension</b> [<img valign="middle" src="https://img.shields.io/badge/v2022.2.28.1-dev-blue">][link-chrome]
+
+[<img src="https://raw.githubusercontent.com/ryanamaral/arykey-firmware/dev/assets/firmware.png" width="34" alt="Android" valign="middle">][link-firmware] <b>Firmware</b> [<img valign="middle" src="https://img.shields.io/badge/v2022.03.06.1-dev-blue">][link-firmware]
+
+<br />
+
+## 👀 Overview
+
+
+<img src="https://github.com/ryanamaral/arykey-chrome-extension/raw/dev/screenshots/popup.png" width="260">
 
 Google Chrome Extension that prepares an hardware device via USB serial port with a specific
 password generated deterministically based on three (3) inputs:
@@ -15,7 +31,7 @@ This extension loads the 'hardware key' with the user inputs, and the KDF will d
 it. The password is not transmitted back via USB to eliminate a possible attack vector, instead is
 typed by emulating an external keyboard when the user clicks the physical button on the device.
 
-### Features
+## 🏗️ Features
 
 * Auto-fill domain based on active tab
 * Store Pair< Domain, Username >
@@ -24,7 +40,7 @@ typed by emulating an external keyboard when the user clicks the physical button
 * **[EXTRA]** Toggle password visibility of a specific password input field in focus by simply
   pressing the `Ctrl` key.
 
-### TODO
+#### TODO
 
 - [ ] Show loading animation while connecting
 - [ ] Success/Error screen after loading
@@ -35,7 +51,8 @@ typed by emulating an external keyboard when the user clicks the physical button
 - [ ] Add LICENSE
 - [ ] More TBD
 
-### How to Install
+
+## 🔧 How to Install
 
 1. Clone this repository to your computer:
 
@@ -48,7 +65,7 @@ $ git clone git@github.com:ryanamaral/arykey-chrome-extension.git
 4. Add the extension by clicking **Load Unpacked** button, and select the source directory
 5. Done!
 
-### How to Use
+## 🔓 How to Use
 
 1. Go to a Login Web page
     * For example: github.com
@@ -62,7 +79,7 @@ $ git clone git@github.com:ryanamaral/arykey-chrome-extension.git
 
 > At this point, by pressing the hardware button of the device it starts typing the password in the current input field with focus.
 
-#### Troubleshoot
+### ⚠️ Troubleshoot
 
 If you can't connect, try turn on the serial port connection feature in Chrome:
 
@@ -70,7 +87,7 @@ If you can't connect, try turn on the serial port connection feature in Chrome:
 chrome://flags/#enable-experimental-web-platform-features
 ```
 
-### APIs & Libraries
+## 📚 APIs & Libraries
 
 * Web Serial API: https://web.dev/serial/
 
@@ -81,7 +98,8 @@ chrome://flags/#enable-experimental-web-platform-features
 
 * Chrome Extensions: https://developer.chrome.com/docs/extensions/
 
-### Sources
+
+## 🔑 Sources
 
 * Load favicon image of each domain: https://stackoverflow.com/a/15750809/904907
 * JS implementation of SHA-512: http://pajhome.org.uk/crypt/
@@ -89,9 +107,16 @@ chrome://flags/#enable-experimental-web-platform-features
 * USB Memory Stick Animation: https://lottiefiles.com/20358-usb-memory-stick-animation
 * Loading/Success/Error Animation: https://lottiefiles.com/627-loading-success-failed
 
-### Screenshots
+
+## 📸 Screenshots
 
 <img src="https://github.com/ryanamaral/arykey-chrome-extension/raw/dev/screenshots/1.png" width="693">
 <img src="https://github.com/ryanamaral/arykey-chrome-extension/raw/dev/screenshots/2.png" width="693">
 <img src="https://github.com/ryanamaral/arykey-chrome-extension/raw/dev/screenshots/3.png" width="693">
 <img src="https://github.com/ryanamaral/arykey-chrome-extension/raw/dev/screenshots/4.png" width="693">
+
+
+## 📄 License
+
+//TODO
+
